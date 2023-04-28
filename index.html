@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Abeilles dans la ruche</title>
+    <style>
+      .hive {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background-color: #F8D42B;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+      }
+
+      .bee {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #FCD116;
+        border-radius: 50%;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      @keyframes moveIn {
+        from {
+          top: 0px;
+          left: -50px;
+        }
+        to {
+          top: 50px;
+          left: 50px;
+        }
+      }
+
+      @keyframes moveOut {
+        from {
+          top: 50px;
+          left: 50px;
+        }
+        to {
+          top: 0px;
+          left: -50px;
+        }
+      }
+
+      .bee-1 {
+        animation-name: moveIn;
+        animation-direction: alternate;
+        animation-delay: 0s;
+      }
+
+      .bee-2 {
+        animation-name: moveIn;
+        animation-direction: alternate-reverse;
+        animation-delay: 1s;
+      }
+
+      .bee-3 {
+        animation-name: moveOut;
+        animation-direction: alternate;
+        animation-delay: 2s;
+      }
+
+      .bee-4 {
+        animation-name: moveOut;
+        animation-direction: alternate-reverse;
+        animation-delay: 3s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hive">
+      <div class="bee bee-1"></div>
+      <div class="bee bee-2"></div>
+      <div class="bee bee-3"></div>
+      <div class="bee bee-4"></div>
+    </div>
+  </body>
+</html>
