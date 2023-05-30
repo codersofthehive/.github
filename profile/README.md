@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="150" src="../logo.png"  />
+  <img height="150" src="https://github.com/codersofthehive/.github/blob/2a77773dabaf726021625ac2deb3d6b880fc38d8/logo.png"  />
 </div>
 
 ###
